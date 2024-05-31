@@ -1,49 +1,15 @@
- import java.util.Random;
-import java.util.Scanner;
+Rock Paper Scissors Game
 
-public class game{
-    public static void main(String args[]) {
+Overview
 
+The Rock Paper Scissors Game is a simple console-based application written in Java. This game allows a user to play the classic game of Rock, Paper, Scissors against the computer. The game randomly generates the computer's choice and determines the winner based on the standard rules of the game.
 
-        Scanner sc = new Scanner(System.in);
-        Random rc = new Random();
-        System.out.println("human's choice:-");
-        int human = sc.nextInt();
-        if (human == 0) {
-            System.out.println("you selected ROCK");
+Features
 
-        } else if (human == 1) {
-            System.out.println("you selected PAPER");
-        } else if (human == 2) {
-            System.out.println("you selected SCISSOR");
-        } else {
-            System.out.println("wrong choice");
-        }
-        System.out.println("Computer's choice:-");
-        int computer = rc.nextInt(3);
-        if (computer == 0) {
-            System.out.println("computer selected ROCK");
-        } else if (computer == 1) {
-            System.out.println("computer selected PAPER");
-        } else if (computer ==2) {
-            System.out.println("computer selected SCISSOR");
-        } else {
-            System.out.println("wrong choice");
-        }
-        System.out.println("results");
-        if (human == computer) {
-            System.out.println("draw");
-        } else if (human == 0 && computer == 2 || human == 1 && computer == 0 || human == 2 && computer == 1) {
-            System.out.println("Congratulation, you win!! :)");
-        } else {
-            System.out.println("you lose!! Better luck next time :(");
-        }
-    }
-}
+-Interactive Gameplay: Play against the computer with real-time results.
 
+-Randomized Computer Choice: The computer's choice is randomly generated for fair play.
 
+-User Input Handling: Input validation ensures the user enters a valid choice.
 
-
-
-
-
+-Game Replay Option: The user can choose to play multiple rounds without restarting the application.
